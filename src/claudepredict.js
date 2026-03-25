@@ -1,5 +1,6 @@
 export async function groqPredict(sentence) {
   const key = import.meta.env.VITE_GROQ_KEY
+   console.log("GROQ KEY:", key)   // 👈 add this
   if (!key) return []
 
   try {
