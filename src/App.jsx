@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 import { useTransformer } from "./useTransformer"
+import { Analytics } from "@vercel/analytics/react"
 
 const PALETTE = [
   { bg: "#2d1b69", border: "#7c3aed", text: "#c4b5fd", hex: "#7c3aed" },
@@ -678,6 +679,7 @@ export default function App() {
           </div>
         )}
       </div>
+      <Analytics />
     </div>
   )
 }
